@@ -1,0 +1,283 @@
+/*===== GOOGLE FONTS =====*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+/*===== VARIABLES CSS =====*/
+:root{
+  --header-height: 3rem;
+
+  /*===== Colors =====*/
+  
+  --first-color: #fff;
+  --second-color: #000;
+  --first-color-light: #7B6F71;
+  --first-color-lighten: #FBF9F9;
+
+
+  /*===== Font and typography =====*/
+  --body-font1: 'Oswald', sans-serif;
+  --body-font2: 'Courgette', cursive;
+  --biggest-font-size: 2.5rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1.125rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+  --smaller-font-size: .75rem;
+
+  /*===== Font weight =====*/
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+
+  /*===== Margin =====*/
+  --mar-1: .5rem;
+  --mar-2: 1rem;
+  --mar-3: 1.5rem;
+  --mar-4: 2rem;
+  --mar-5: 2.5rem;
+  --mar-6: 3rem;
+  
+  /*===== Padding =====*/
+  --pad-1: .5rem;
+  --pad-2: 1rem;
+  --pad-3: 1.5rem;
+  --pad-4: 2rem;
+  --pad-5: 2.5rem;
+  --pad-6: 3rem;
+
+  /*===== z index =====*/
+  --z-normal: 1;
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+/*===== BASE =====*/
+*,::before,::after{
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+  }
+  
+  body {
+      font-family: var(--body-font1);
+      font-size: var(--normal-font-size);
+      font-weight: var(--font-medium);
+      background-color: var(--first-color-lighten);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+    
+    section h2,aside,footer li {
+        font-family: var(--body-font2);
+        
+   }
+    
+    h2,h3 {
+    font-weight: var(--font-semi-bold);
+  }
+  
+  ul {
+    
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  img{
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    display: block;
+  }
+  
+ /*===== CLASS CSS =====*/
+.section {
+    padding: 4rem 0 2rem;
+}
+
+.section-title, .section-subtitle {
+    text-align: center;
+}
+
+.section-title {
+    font-size: var(--h1-font-size);
+    color: var(--first-color);
+    margin-bottom: var(--mb-3);
+}
+
+.section-subtitle {
+    display: block;
+    font-size: var(--smaller-font-size);
+    font-weight: var(--font-semi-bold);
+}
+/*===== LAYOUT =====*/
+.bd-container {
+    max-width: 1024px;
+    width: calc(100% - 2rem);
+    margin-left: var(--mb-2);
+    margin-right: var(--mb-2);
+}
+
+.bd-grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.l-header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+    background-color: var(--color-black);
+}
+
+/*===== NAV =====*/
+.nav {
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px){
+    .nav__menu {
+        border-top: 1px solid grey;
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        padding-top: 1.5rem;
+        text-align: center;
+        background-color: var(--color-black);
+        transition: .4s;
+        box-shadow: 0 2px 4px rgba(0, 0, 0,.1);
+        border-radius: 0 0 1rem 1rem;
+    }
+}
+
+.nav__item {
+    margin-bottom: var(--mb-3);
+}
+
+.nav__link {
+    color: var(--first-color-lighten);
+    transition: .3s;
+}
+
+.nav__link:hover {
+    color: var(--first-color-light);
+}
+
+.nav__logo, .nav__toggle {
+    color: var(--first-color-lighten);
+}
+
+.nav__toggle {
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+/* Show menu */
+.show-menu {
+    top: var(--header-height);
+}
+
+/* Active menu */
+.active-link {
+  position: relative;
+}
+
+.active-link::after {
+  content: '';
+  position: absolute;
+  bottom: -.7rem;
+  left: 0;
+  width: 65%;
+  height: 2px;
+  background-color: var(--first-color-light);
+}
+/* Change background header */
+.scroll-header {
+  background-color: var(--first-color-lighten);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+}
+
+.scroll-header .nav__logo, .scroll-header .nav__toggle, .scroll-header .nav__link {
+  color: var(--first-color-dark);
+}
+
+.scroll-header .nav__menu {
+  background-color: var(--first-color-lighten);
+}
+/*===== SCROLL TOP =====*/
+.scrolltop {
+  position: fixed;
+  right: 1rem;
+  bottom: -20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: .5rem;
+  background: rgba(123, 111, 113, .7);
+  border-radius: .5rem;
+  z-index: var(--z-tooltip);
+  transition: .4s;
+   visibility: hidden; 
+}
+
+.scrolltop:hover {
+  background-color: var(--second-color);
+}
+
+.scrolltop__icon {
+  font-size: 2rem;
+  color: var(--first-color-lighten);
+}
+
+/* Show scroll top */
+.show-scroll {
+  visibility: visible;
+  bottom: 1.5rem;
+}
+
+/*===== HOME =====*/
+.home {
+  background-color: var(--color-black);
+  overflow: hidden;
+} 
+
+@media screen and (min-width: 768px){
+    body {
+      margin: 0;
+    }
+  
+    .section {
+      padding-top: 6rem;
+    }
+  
+    .section-title {
+      margin-bottom: var(--mb-5);
+    }
+  
+    .nav {
+      height: calc(var(--header-height) + 1.5rem);
+    }
+  
+    .nav__list {
+      display: flex;
+    }
+  
+    .nav__item {
+      margin-left: var(--mb-5);
+      margin-bottom: 0;
+    }
+  
+    .nav__toggle {
+      display: none;
+    }
+}

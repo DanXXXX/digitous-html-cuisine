@@ -3,56 +3,145 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <!-- ===== RESET  / NORMALIZE  CSS ===== -->
+
+        <!-- ===== SWIPER CSS ===== -->
         <link rel="stylesheet" href="/assets/css/normalize.css">
         <link rel="stylesheet" href="/assets/css/reset.css">
+      
         <!-- ===== BOX ICONS ===== -->
         <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
         <!-- ===== CSS ===== -->
         <link rel="stylesheet" href="/assets/css/style.css">
+
         <title>Cui'zine</title>
     </head>
     <body>
-        <!--========== SCROLL TOP ==========-->
-        <div class="wrapper">
-            <!--========== HEADER ==========-->
-            <header class="header">
-                <div class="brand">
-                    <div class="logo">Cui'zine</div>
-                    <nav class="navbar">
-                        <a href="#">Accueil</a>
-                        <a href="#">Equipe</a>
-                        <a href="#">Blog</a>
-                        <a href="#">Contact</a>
-                    </nav>
-                </div>
-                <!--========== Toggle ==========-->
-                <div class="menu">
-                    <ul>
-                        <li><a href="#" onclick="toggleMenu();">Accueil</a></li>
-                        <li><a href="#" onclick="toggleMenu();">Blog</a></li>
-                        <li><a href="#" onclick="toggleMenu();">Equipe</a></li>
-                        <li><a href="#" onclick="toggleMenu();">Contact</a></li>
+        <!--===== SCROLL TOP =====-->
+        <a href="#" class="scrolltop" id="scrolltop">
+            <i class='bx bxs-chevron-up scrolltop__icon' ></i>
+        </a>
+        
+        <!--===== HEADER =====-->
+        <header class="l-header" id="header">
+            <nav class="nav bd-container">
+                <a href="#" class="nav__logo">Cui'zine</a>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="homePage.html" class="nav__link ">Accueil</a></li>
+                        <li class="nav__item"><a href="team.html" class="nav__link">Equipe</a></li>
+                        <li class="nav__item"><a href="./post.html" class="nav__link">Blog</a></li>
+                        <li class="nav__item "><a href="./team-member.html" class="nav__link">Team-members</a></li>
+                        <li class="nav__item"><a href="./recipe.html" class="nav__link">Reçettes</a></li> 
+                        <li class="nav__item"><a href="./contact.html" class="nav__link">Contact</a></li>
                     </ul>
                 </div>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home" id="home">
                 <div class="header-title">
-                    <img src="./assets/img/logo_square_white.png" alt="photo du logo" class="image">
+                    <div class="header-image">
+                        <img src="./assets/img/logo_square_white.png" alt="photo du logo" class="h-image">
+                    </div>
                     <h1 class="g-title">
                         Cui'zine
                     </h1>
                     <h2 class="subtitle">Le mag cuisine</h2>
                 </div>
-        </header>
-        <main class="main">
+            </section>
 
+            <section class="l-section">
+                <h2 class="section-article">Paëlla</h2>
+                <span class="ingredient"></span>
+                <span class="ingredient"></span>
+                <span class="ingredient"></span>
+                <span class="ingredient"></span>
+                <span class="ingredient"></span>
+                <span class="ingredient"></span>
+                <span class="ingredient"></span>
+                <span class="ingredient"></span>
+                <span class="ingredient"></span>
+                <span class="ingredient"></span>
+                <span class="ingredient"></span>
+                <span class="ingredient"></span>
+                <span class="ingredient"></span>
+                <span class="ingredient"></span>
+                <span class="ingredient"></span>
+                <span class="ingredient"></span>
+                <span class="ingredient"></span>
+                <span class="ingredient"></span>
+            </section>
+            <section class="l-section">
+                <div class="info">
+                    <p class="temp">
+                        <box-icon type='solid' name='timer'></box-icon>
+                    </p>
+                </div>
+                <div class="step">
+                    <h3 class="step-article">Etape</h3>
+                    <p class="para"></p>
+                </div>
+                <div class="step">
+                    <h3 class="step-article">Etape</h3>
+                    <p class="para"></p>
+                </div>
+                <div class="step">
+                    <h3 class="step-article">Etape</h3>
+                    <p class="para"></p>
+                </div>
+                <div class="step">
+                    <h3 class="step-article">Etape</h3>
+                    <p class="para"></p>
+                </div>
+                <div class="step">
+                    <h3 class="step-article">Etape</h3>
+                    <p class="para"></p>
+                </div>
+                <div class="step">
+                    <h3 class="step-article">Etape</h3>
+                    <p class="para"></p>
+                </div>
+                <div class="step">
+                    <h3 class="step-article">Etape</h3>
+                    <p class="para"></p>
+                </div>
+                <div class="step">
+                    <h3 class="step-article">Etape</h3>
+                    <p class="para"></p>
+                </div>
+                <div class="step">
+                    <h3 class="step-article">Etape</h3>
+                    <p class="para"></p>
+                </div>
+                <div class="step">
+                    <h3 class="step-article">Etape</h3>
+                    <p class="para"></p>
+                </div>
+                <div class="step">
+                    <h3 class="step-article">Etape</h3>
+                    <p class="para"></p>
+                </div>
+                <div class="step">
+                    <h3 class="step-article">Etape</h3>
+                    <p class="para"></p>
+                </div>
+                <div class="step">
+                    <h3 class="step-article">Etape</h3>
+                    <p class="para"></p>
+                </div>
+                <div class="step">
+                    <h3 class="step-article">Etape</h3>
+                    <p class="para"></p>
+                </div>
+            </section>
 
-
-
-
-
-
-            <aside class="aside">
+            <aside class="l-aside">
                 <div class="search">
                     <h4 class="aside-title">Rechercher</h4>
                     <input type="text" class="recherche" placeholder="Recherche">
@@ -66,59 +155,61 @@
                 <div class="social">
                     <h4 class="aside-title">Partager</h4>
                     <div class="reseau">
-                        <box-icon name='facebook-square' type='logo' ></box-icon>
-                        <box-icon name='instagram' type='logo' ></box-icon>
-                        <box-icon name='youtube' type='logo' ></box-icon>
-                        <box-icon name='twitter' type='logo' ></box-icon>
+                        <i class='bx bxl-facebook-square' ></i>
+                        <i class='bx bxl-instagram' ></i>
+                        <i class='bx bxl-youtube' ></i>
+                        <i class='bx bxl-twitter' ></i>
                     </div>
                 </div>
             </aside>
-        </main>
-        <footer class="footer">
-            <div class="categories">
-                <ul>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                </ul>
+    </main>
+    <footer class="footer">
+        <div class="categories">
+            <h2 class="footer-title">Categories</h2>
+            <ul>
+                <li><a href="#">Revues</a></li>
+                <li><a href="#">Recettes</a></li>
+                <li><a href="#">Découvertes</a></li>
+            </ul>
+        </div>
+        <div class="categories">
+            <h2 class="footer-title">Archives</h2>
+            <ul>
+                <li><a href="#">2019</a></li>
+                <li><a href="#">2018</a></li>
+                <li><a href="#">2017</a></li>
+            </ul>
+        </div>
+        <div class="contact">
+            <div class="new">
+                <h4 class="footer-title aside-title">Newletter</h4>
+                <input type="email" class="recherche" placeholder="Email">
+                <button class="btn">S'inscrire</button>
             </div>
-            <div class="categories">
-                <ul>
-                    <li><a href="#">2019</a></li>
-                    <li><a href="#">2018</a></li>
-                    <li><a href="#">2017</a></li>
-                </ul>
-            </div>
-            <div class="contact">
-                <div class="new">
-                    <h4 class="footer-title aside-title">Newletter</h4>
-                    <input type="email" class="recherche" placeholder="Email">
-                    <button class="btn">S'inscrire</button>
+            <div class="social">
+                <h4 class="footer-title aside-title">Partager</h4>
+                <div class="reseau">
+                    <a href="#">
+                        <i class='bx bxl-facebook-square' ></i>
+                    </a>
+                    <a href="#">
+                        <i class='bx bxl-instagram' ></i>
+                    </a>
+                    <a href="#">
+                        <i class='bx bxl-youtube' ></i>
+                    </a>
+                    <a href="#">
+                        <i class='bx bxl-twitter' ></i>
+                    </a>
                 </div>
-                <div class="social">
-                    <h4 class="footer-title aside-title">Partager</h4>
-                    <div class="reseau">
-                        <box-icon name='facebook-square' type='logo'></box-icon>
-                        <box-icon name='instagram' type='logo'></box-icon>
-                        <box-icon name='youtube' type='logo'></box-icon>
-                        <box-icon name='twitter' type='logo'></box-icon>
-                    </div>
-                </div>
             </div>
-        </footer>
-    </div>
+        </div>
+    </footer>
+</div>
+<!--========== MENU ==========--> 
+<!--========== FOOTER ==========-->
 
-
-
-
-
-        <!--========== MENU ==========-->
-
-
-
-    <!--========== FOOTER ==========-->
-
-    <!--========== MAIN JS ==========-->
-    <script src="./assets/Js/main.js"></script>
-    </body>
-    </html>
+<!--========== MAIN JS ==========-->
+<script src="./assets/Js/main.js"></script>
+</body>
+</html>
